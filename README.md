@@ -121,8 +121,8 @@ class List extends React.Component {
 ````
 
 Ordering inside a Component
-1. `constructor`
-2. Lifecycle functions in the order they execute
-3. clickHandlers
-4. Other functions
-5. `render()`
+- 1. `constructor`
+- 2. Lifecycle functions in the order they execute
+- 3. clickHandlers
+- 4. Other functions
+- 5. `render()`
