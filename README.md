@@ -26,7 +26,7 @@ If you don't need state or use refs, use stateless arrow functions.
 //example with block statement
 const Item = ({ items } = props ) => {
   return(
-    <div>{ this.props.items</div>
+    <div>{ this.props.items }</div>
   )
 }
 
