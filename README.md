@@ -16,7 +16,7 @@ If you have interal state or use refs, use class
 class Item extends from React.component {
   ...
   render() {
-    return(<div>{ this.state.items }</div>)
+    return (<div>{ this.state.items }</div>)
   }
 }
 ```
@@ -69,7 +69,7 @@ render() {
 }
 
 render() {
-  return(
+  return (
     <ul>
       <li>List item</li>
       <li>List item</li>
@@ -90,7 +90,7 @@ Use double quotes on attributes, but single quots for all other.
 
 ```javascript
 //Example with single parameter (don't use parentheses)
-return(
+return (
   <div>{ 
     this.props.list.map(item => (
       <ListItem key={ item.key } />
@@ -99,7 +99,7 @@ return(
 )
 
 //Example with multiple parameters
-return(
+return (
   <div>{ 
     this.props.list.map((item, index) => (
       <ListItem 
