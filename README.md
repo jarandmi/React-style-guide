@@ -15,7 +15,7 @@ If you have interal state or use refs, use class
 class Item extends from React.component {
   ...
   render{
-    return(<div>{ this.state.items}</div>)
+    return(<div>{ this.state.items }</div>)
   }
 }
 ```
