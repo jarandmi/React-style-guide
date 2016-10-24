@@ -127,6 +127,7 @@ class List extends React.Component {
   }
 }
 ````
+##Ordering
 
 Ordering inside a Component
 - 1. `constructor`
