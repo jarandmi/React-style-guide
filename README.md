@@ -3,14 +3,15 @@
 Naming
 
 Use PascalCase for alle React component. Both filenames and component names.
-```
+```javascript
 //Example
 import List from "./list.js"
 ```
 
 If you have interal state or use refs use class [classname] extends React.Component
 
-```//example
+```javascript
+//example
 class Item extends from React.component {
   ...
   render{
@@ -21,7 +22,7 @@ class Item extends from React.component {
 
 If you don't need state or use refs, use stateless arrow functions.
 
-```
+```javascript
 //example with block statement
 const Item = ({ items } = props ) => {
   return(
