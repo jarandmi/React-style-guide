@@ -5,7 +5,7 @@ Naming
 Use PascalCase for alle React component. Both filenames and component names.
 ```javascript
 //Example
-import List from "./list.js"
+import List from "./List.js"
 ```
 
 If you have interal state or use refs, use class
