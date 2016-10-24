@@ -8,7 +8,7 @@ Use PascalCase for alle React component. Both filenames and component names.
 import List from "./list.js"
 ```
 
-If you have interal state or use refs use class [classname] extends React.Component
+If you have interal state or use refs, use class
 
 ```javascript
 //example
