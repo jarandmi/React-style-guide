@@ -78,6 +78,11 @@ render (){
 }
 ```
 
+Use double quotes on attributes, but single quots for all other.
+```javascript
+  <List name="List name" style={{ fontSize: '1rem' }} />
+```
+
 - Always self-close tags that have no children
 - Inline interation with arrow function
 ```javascript
