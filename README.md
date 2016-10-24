@@ -89,7 +89,7 @@ Use double quotes on attributes, but single quots for all other.
 - Always self-close tags that have no children
 
 ##Inline Functions
-- Inline interation with arrow function
+- Inline iteration with arrow function
 
 ```javascript
 //Example with single parameter (don't use parentheses)
