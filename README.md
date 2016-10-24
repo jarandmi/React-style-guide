@@ -36,6 +36,8 @@ const Item = ({ items } = props ) => (
 )
 ```
 
+
+
 - Always use single space before closing tag
 ```javascript
 <List />
@@ -77,4 +79,27 @@ render (){
 ```
 
 - Always self-close tags that have no children
-- 
+- Inline interation with arrow function
+```javascript
+//Example with single parameters (don't use parentheses)
+return(
+  <div>{ 
+    this.props.list.map(item => (
+      <ListItem key={ item.key } />
+    ))
+  }</div>
+)
+
+//Example with multiple parameters
+return(
+  <div>{ 
+    this.props.list.map((item, index) => (
+      <ListItem 
+        key={ items.index }
+        name={ item.name }
+      />
+        
+    ))
+  }</div>
+)
+```
