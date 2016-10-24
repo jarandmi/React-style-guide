@@ -81,7 +81,7 @@ render (){
 - Always self-close tags that have no children
 - Inline interation with arrow function
 ```javascript
-//Example with single parameters (don't use parentheses)
+//Example with single parameter (don't use parentheses)
 return(
   <div>{ 
     this.props.list.map(item => (
@@ -103,3 +103,18 @@ return(
   }</div>
 )
 ```
+
+Binding
+```
+//Example of autobinding `this` in ES6
+class List extends React.Component {
+  checkItem = () => {
+    ...
+  }
+  
+  render(){
+    return(){
+      <div onClick={ this.checkItem }>Check</div>
+    }
+  }
+}
