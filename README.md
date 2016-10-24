@@ -42,7 +42,7 @@ const Item = ({ items } = props ) => (
 ```
 
 If more than one attribute format over multiple lines
-```javscript
+```javascript
 //Example with one attribute
 <List name="Item list" />
 
