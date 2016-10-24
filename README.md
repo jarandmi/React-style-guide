@@ -37,5 +37,44 @@ const Item = ({ items } = props ) => (
 ```
 
 - Always use single space before closing tag
+```javascript
+<List />
+```
 
+If more than one attribute format over multiple lines
+```javscript
+//Example with one attribute
+<List name="Item list" />
 
+//Example with multiple attributes
+<List 
+  name="Item liste"
+  label="List of items"
+/>
+```
+
+Use spacing inside curly braces
+```javascript
+//Example
+<List content={` `this.props.items` `} />
+```
+
+- Use camelCase for prop names.
+- Wrap return inside parentheses when more than one line
+```javascript
+render() {
+  return <div>List</div>
+}
+
+render (){
+  return(
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+  )
+}
+```
+
+- Always self-close tags that have no children
+- 
