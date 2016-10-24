@@ -1,12 +1,13 @@
 # React-style-guide
 
-Naming
+##Naming
 
 Use PascalCase for alle React component. Both filenames and component names.
 ```javascript
 //Example
 import List from "./List.js"
 ```
+##Class and statelesss function
 
 If you have interal state or use refs, use class
 
@@ -20,7 +21,7 @@ class Item extends from React.component {
 }
 ```
 
-If you don't need state or use refs, use stateless arrow functions.
+If you don't need state or use refs, use stateless arrow function.
 
 ```javascript
 //example with block statement
@@ -36,14 +37,14 @@ const Item = ({ items } = props ) => (
 )
 ```
 
-
+##Formating
 
 - Always use single space before closing tag
 ```javascript
 <List />
 ```
 
-If more than one attribute format over multiple lines
+- If more than one attribute format over multiple lines
 ```javascript
 //Example with one attribute
 <List name="Item list" />
@@ -55,12 +56,11 @@ If more than one attribute format over multiple lines
 />
 ```
 
-Use spacing inside curly braces
+- Use spacing inside curly braces
 ```javascript
 //Example
 <List content={` `this.props.items` `} />
 ```
-
 - Use camelCase for prop names.
 - Wrap return inside parentheses when more than one line
 ```javascript
@@ -84,7 +84,10 @@ Use double quotes on attributes, but single quots for all other.
 ```
 
 - Always self-close tags that have no children
+
+##Inline Functions
 - Inline interation with arrow function
+
 ```javascript
 //Example with single parameter (don't use parentheses)
 return(
@@ -108,8 +111,8 @@ return(
   }</div>
 )
 ```
+##Binding
 
-Binding
 ```javascript
 //Example of autobinding `this` in ES6
 class List extends React.Component {
