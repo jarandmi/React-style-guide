@@ -120,7 +120,7 @@ return (
 //Example of autobinding `this` with arrow function in ES6
 class List extends React.Component {
   checkItem = () => {
-    ...
+    this...
   }
   
   render() {
