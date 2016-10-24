@@ -15,7 +15,7 @@ If you have interal state or use refs, use class
 //example
 class Item extends from React.component {
   ...
-  render{
+  render() {
     return(<div>{ this.state.items }</div>)
   }
 }
@@ -26,7 +26,7 @@ If you don't need state or use refs, use stateless arrow function.
 ```javascript
 //example with block statement
 const Item = ({ items } = props ) => {
-  return(
+  return (
     <div>{ items }</div>
   )
 }
@@ -68,7 +68,7 @@ render() {
   return <div>List</div>
 }
 
-render (){
+render() {
   return(
     <ul>
       <li>List item</li>
@@ -120,10 +120,8 @@ class List extends React.Component {
     ...
   }
   
-  render(){
-    return(){
-      <div onClick={ this.checkItem }>Check</div>
-    }
+  render() {
+    return <div onClick={ this.checkItem }>Check</div>
   }
 }
 ````
