@@ -59,7 +59,7 @@ const Item = ({ items } = props ) => (
 - Use spacing inside curly braces
 ```javascript
 //Example
-<List content={` `this.props.items` `} />
+<List content={ this.props.items } />
 ```
 - Use camelCase for prop names.
 - Wrap return inside parentheses when more than one line
@@ -80,7 +80,10 @@ render() {
 
 Use double quotes on attributes, but single quots for all other.
 ```javascript
-  <List name="List name" style={{ fontSize: '1rem' }} />
+  <List 
+    name="List name" 
+    style={{ fontSize: '1rem' }} 
+  />
 ```
 
 - Always self-close tags that have no children
