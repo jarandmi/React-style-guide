@@ -114,7 +114,7 @@ return(
 ##Binding
 
 ```javascript
-//Example of autobinding `this` in ES6
+//Example of autobinding `this` with arrow function in ES6
 class List extends React.Component {
   checkItem = () => {
     ...
