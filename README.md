@@ -7,7 +7,7 @@ Use PascalCase for alle React component. Both filenames and component names.
 //Example
 import List from "./List.js"
 ```
-##Class and statelesss function
+##Class and stateless function
 
 If you have interal state or use refs, use class
 
