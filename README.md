@@ -60,7 +60,7 @@ const Item = ({ items } = props ) => (
 <List content={ this.props.items } />
 ```
 - Use camelCase for prop names.
-- Wrap return statements inside parenthesis when there are more than one line
+- Wrap return values inside parenthesis when there is more than one line
 ```javascript
 render() {
   return <div>List</div>
