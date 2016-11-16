@@ -2,17 +2,16 @@
 
 ##Naming
 
-Use PascalCase for alle React component. Both filenames and component names.
+Use PascalCase for all React components. Both file and component names.
 ```javascript
-//Example
-import List from "./List.js"
+import List from './List.js'
 ```
+
 ##Class and stateless function
 
 If you have interal state or use refs, use class
 
 ```javascript
-//example
 class Item extends from React.component {
   ...
   render() {
@@ -21,23 +20,23 @@ class Item extends from React.component {
 }
 ```
 
-If you don't need state or use refs, use stateless arrow function.
+If you don’t need state or to use refs, use a stateless component.
 
 ```javascript
-//example with block statement
+// With block statement
 const Item = ({ items } = props ) => {
   return (
     <div>{ items }</div>
   )
 }
 
-//Example with implicit return
+// With implicit return
 const Item = ({ items } = props ) => (
   <div>{ items }</div>
 )
 ```
 
-##Formating
+##Formatting
 
 - Always use single space before closing tag
 ```javascript
@@ -46,10 +45,10 @@ const Item = ({ items } = props ) => (
 
 - If more than one attribute format over multiple lines
 ```javascript
-//Example with one attribute
+// With one attribute
 <List name="Item list" />
 
-//Example with multiple attributes
+// With multiple attributes
 <List 
   name="Item liste"
   label="List of items"
@@ -58,11 +57,10 @@ const Item = ({ items } = props ) => (
 
 - Use spacing inside curly braces
 ```javascript
-//Example
 <List content={ this.props.items } />
 ```
 - Use camelCase for prop names.
-- Wrap return inside parentheses when more than one line
+- Wrap return statements inside parenthesis when there are more than one line
 ```javascript
 render() {
   return <div>List</div>
@@ -92,7 +90,7 @@ Use double quotes on attributes, but single quots for all other.
 - Inline iteration with arrow function
 
 ```javascript
-//Example with single parameter (don't use parentheses)
+// With single parameter (don't use parenthesis)
 return (
   <div>{ 
     this.props.list.map(item => (
@@ -101,12 +99,12 @@ return (
   }</div>
 )
 
-//Example with multiple parameters
+// With multiple parameters
 return (
   <div>{ 
     this.props.list.map((item, index) => (
       <ListItem 
-        key={ items.index }
+        key={ index }
         name={ item.name }
       />
         
@@ -114,10 +112,11 @@ return (
   }</div>
 )
 ```
+
 ##Binding
 
 ```javascript
-//Example of autobinding `this` with arrow function in ES6
+// Autobinding `this` with arrow function in ES6
 class List extends React.Component {
   checkItem = () => {
     this...
@@ -127,7 +126,8 @@ class List extends React.Component {
     return <div onClick={ this.checkItem }>Check</div>
   }
 }
-````
+```
+
 ##Ordering
 
 Ordering inside a Component
